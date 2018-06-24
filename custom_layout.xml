@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+
+    android:paddingBottom="35dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp">
+
+    <EditText
+        android:id="@+id/fpem"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:hint="Enter your registered EmailID"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/sendp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fpem"
+        android:text="Send Password" />
+
+    <Button
+        android:id="@+id/canp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/fpem"
+        android:layout_alignTop="@+id/sendp"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-85dp"
+        android:layout_toStartOf="@+id/canp"
+        android:paddingBottom="10dp"
+        android:text="Forgot Password"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+</RelativeLayout>
